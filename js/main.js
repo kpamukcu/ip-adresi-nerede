@@ -6,7 +6,9 @@ form.addEventListener('submit', function (form) {
         .then(response => response.json())
         .then(veri => {
             let ulke = document.getElementById('country')
-            ulke.innerText = `${veri.location.country} / ${veri.location.state}`
+            let sehir = document.getElementById('city')
+            ulke.innerText = veri.location.country
+            sehir.innerText = veri.location.state
         })
 })
 
