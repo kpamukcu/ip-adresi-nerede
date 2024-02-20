@@ -1,4 +1,5 @@
-http://ip-api.com/json/194.140.198.254
+https://api.ipapi.is?q=${ipYakala}
 
 Documentations
-https://ip-api.com/docs/api:json
+https://ipapi.is/developers.html
+https://api.ipapi.is/
