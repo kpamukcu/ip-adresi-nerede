@@ -2,6 +2,22 @@ form.addEventListener('submit', function (form) {
     form.preventDefault()
     let ipYakala = document.getElementById('ipAdres').value
 
+    fetch(`https://api.ipapi.is?q=${ipYakala}`)
+        .then(response => response.json())
+        .then(veri => {
+            let ulke = document.getElementById('country')
+            ulke.innerText = `${veri.location.country} / ${veri.location.state}`
+        })
+})
+
+
+/* 
+
+
+form.addEventListener('submit', function (form) {
+    form.preventDefault()
+    let ipYakala = document.getElementById('ipAdres').value
+
     fetch(`http://ip-api.com/json/${ipYakala}`)
         .then(response => response.json())
         .then(veri => {
@@ -10,6 +26,8 @@ form.addEventListener('submit', function (form) {
         })
 })
 
+
+*/
 
 
 
