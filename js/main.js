@@ -5,8 +5,8 @@ form.addEventListener('submit', function (form) {
     fetch(`http://ip-api.com/json/${ipYakala}`)
         .then(response => response.json())
         .then(veri => {
-            let ulke = document.getElementById('sonuc')
-            ulke.innerText = veri.country
+            let ulke = document.getElementById('country')
+            ulke.innerText = `${veri.country} / ${veri.city}`
         })
 })
 
