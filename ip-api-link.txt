@@ -1,0 +1,4 @@
+http://ip-api.com/json/194.140.198.254
+
+Documentations
+https://ip-api.com/docs/api:json
